@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedExcel College of Medicine</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- bootstrap icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Info Bar (Always Visible) -->
+<div id="topBar" class="py-1 border-bottom text-white" style="background-color: #398ed6; position: fixed; top: 0; width: 100%; z-index: 1030;">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+    <!-- Contact Info -->
+    <div class="mb-2 mb-md-0">
+      <span class="me-3">
+        <i class="bi bi-telephone-fill"></i>
+        <a href="tel:+1234567890" class="text-white text-decoration-none">+2547 03914824</a>
+      </span>
+      <span>
+        <i class="bi bi-envelope-fill"></i>
+        <a href="mailto:info@kingsmedicalcollege.edu" class="text-white text-decoration-none">info@kingsmedicalcollege.edu</a>
+      </span>
+    </div>
+
+    <!-- Portals and Social -->
+    <div class="d-flex flex-wrap align-items-center justify-content-center">
+      <a href="#" class="btn btn-sm rounded-pill me-2 mb-1" style="background-color: #de1f20; color: white;">Staff Portal</a>
+      <a href="#" class="btn btn-sm rounded-pill me-3 mb-1" style="background-color: #de1f20; color: white;">Student Portal</a>
+      <span class="me-2">Follow us:</span>
+      <a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Main Navbar (Hides on Scroll Down) -->
+<nav id="mainNav" class="navbar navbar-expand-lg" style="background: linear-gradient(to bottom, #398ed6, #de1f20); position: fixed; top: 48px; width: 100%; z-index: 1020; transition: top 0.3s;">
+  <div class="container-fluid px-3 px-md-4">
+    <!-- Logo -->
+    <a class="navbar-brand me-3" href="#">
+      <img src="assets/images/logo.png" alt="MedExcel Logo" height="40">
+    </a>
+
+    <!-- Toggler for Mobile -->
+    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Nav Content -->
+    <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+        <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Our Courses</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Admission</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="academicsDropdown" role="button" data-bs-toggle="dropdown">
+            Academics
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">E-Learning</a></li>
+            <li><a class="dropdown-item" href="#">Library</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Students</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Apply Button -->
+    <div class="d-none d-lg-block">
+      <a href="#" class="btn rounded-pill fw-semibold ms-3" style="background-color: #398ed6; color: white;">Apply Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Spacer to offset fixed navbars -->
+<div style="height: 110px;"></div>
+
+<!-- Typewriter Overlay -->
+<div class="position-absolute w-100" style="z-index: 10; text-align: center;">
+  <strong id="typewriter" class="fw-bold" style="color: #de1f20; font-size: 1.25rem;"></strong>
+</div>
+
+<!-- Hero Slider Section -->
+<section class="hero-slider position-relative" style="position: relative;">
+  <div class="swiper heroSwiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide position-relative" style="background: url('assets/images/hero.webp') center/cover no-repeat; height: 90vh;">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="text-white">
+            <h3 class="text-uppercase" style="color: #cef0ff;">The Best Learning Institution</h3>
+            <h1 class="fw-bold" style="color: #de1f20;">Welcome to MedExcel College of Medicine</h1>
+            <p class="lead">We are committed to shaping compassionate, skilled healthcare professionals through world-class education.</p>
+            <a href="#" class="btn btn-primary rounded-pill px-4 mt-3" style="background-color: #398ed6;">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide position-relative" style="background: url('assets/images/hero2.png') center/cover no-repeat; height: 90vh;">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="text-white">
+            <h3 class="text-uppercase" style="color: #cef0ff;">The Best Learning Institution</h3>
+            <h1 class="fw-bold" style="color: #de1f20;">World-Class Medical Programs</h1>
+            <p class="lead">Join a community where excellence in education meets compassionate healthcare training.</p>
+            <a href="#" class="btn btn-primary rounded-pill px-4 mt-3" style="background-color: #398ed6;">Discover More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide position-relative" style="background: url('assets/images/hero3.png') center/cover no-repeat; height: 90vh;">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="text-white">
+            <h3 class="text-uppercase" style="color: #cef0ff;">Apply Today</h3>
+            <h1 class="fw-bold" style="color: #de1f20;">Begin Your Medical Journey</h1>
+            <p class="lead">MedExcel is your path to a fulfilling and impactful healthcare career.</p>
+            <a href="#" class="btn btn-primary rounded-pill px-4 mt-3" style="background-color: #398ed6;">Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Swiper Navigation -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev text-white"></div>
+    <div class="swiper-button-next text-white"></div>
+  </div>
+</section>
+
+
+<!-- Courses Section -->
+<section class="py-5" style="background-color: #f9f9f9;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h1 style="color: #de1f20;">Courses Offered at MedExcel</h1>
+      <p class="text-muted">Explore our popular programs and disciplines</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Course Card -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <img src="assets/images/hero.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Political Science">
+          <div class="card-body">
+            <h5 class="card-title text-capitalize">Political Science</h5>
+            <p class="card-text">Introductory text for political science. Learn how governance and global policies shape society.</p>
+            <a href="#" class="btn rounded-pill text-white" style="background-color: #398ed6;">Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat Course Cards with unique image & title -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <img src="C:\Users\Bobeski\Desktop\pints\1d009b2133953b9a776739bfde8d251a.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Political Science">
+          <div class="card-body">
+            <h5 class="card-title text-capitalize">Literature</h5>
+            <p class="card-text">Explore classical and modern works in our Literature program designed to inspire creativity.</p>
+            <a href="#" class="btn rounded-pill text-white" style="background-color: #398ed6;">Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <img src="assets/images/hero.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Political Science">
+          <div class="card-body">
+            <h5 class="card-title text-capitalize">Advanced Mathematics</h5>
+            <p class="card-text">Develop critical thinking and problem-solving skills through our advanced math track.</p>
+            <a href="#" class="btn rounded-pill text-white" style="background-color: #398ed6;">Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional 3 Courses -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <img src="assets/images/hero.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Political Science">
+          <div class="card-body">
+            <h5 class="card-title text-capitalize">Micro Biology</h5>
+            <p class="card-text">Study microorganisms and their impact on medicine, the environment, and more.</p>
+            <a href="#" class="btn rounded-pill text-white" style="background-color: #398ed6;">Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <img src="assets/images/hero.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Political Science">
+          <div class="card-body">
+            <h5 class="card-title text-capitalize">Global Economics</h5>
+            <p class="card-text">Understand markets, trade, and policies in our comprehensive economics course.</p>
+            <a href="#" class="btn rounded-pill text-white" style="background-color: #398ed6;">Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <img src="assets/images/hero.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Political Science">
+          <div class="card-body">
+            <h5 class="card-title text-capitalize">Computer Science</h5>
+            <p class="card-text">Dive into coding, AI, and systems design through our hands-on CS program.</p>
+            <a href="#" class="btn rounded-pill text-white" style="background-color: #398ed6;">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section id="whyUs" class="py-5" style="background-color: #cef0ff;">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image Column -->
+      <div class="col-md-5 mb-4 mb-md-0">
+        <img src="assets/images/hero.webp" class="img-fluid rounded shadow" style="height: 100%; max-height: 400px; object-fit: cover;" alt="Why Choose Us">
+      </div>
+
+      <!-- Text Column -->
+      <div class="col-md-7">
+        <h1 class="mb-3" style="color: #de1f20;">Why Choose Us?</h1>
+        <p class="text-muted">The ship set ground on the shore of this uncharted desert isle with Gilligan the Skipper too, the millionaire and his wife.</p>
+        <p class="text-muted">It's time to put on makeup. It's time to dress up right. It's time to raise the curtain on the Muppet Show tonight.</p>
+
+        <div class="row mt-4">
+          <!-- Feature 1 -->
+          <div class="col-sm-4 text-center mb-3">
+            <div class="p-3 border rounded bg-white shadow-sm h-100">
+              <div class="mx-auto mb-3 d-flex justify-content-center align-items-center rounded-circle" 
+                  style="width: 70px; height: 70px; background-color: #de1f20;">
+                <img src="assets/images/ex-faculty.png" alt="Experienced Faculty">
+              </div>
+              <h5 style="color: #398ed6;">Experienced Faculty</h5>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="col-sm-4 text-center mb-3">
+            <div class="p-3 border rounded bg-white shadow-sm h-100">
+              <div class="mx-auto mb-3 d-flex justify-content-center align-items-center rounded-circle" 
+                  style="width: 70px; height: 70px; background-color: #de1f20;">
+                <img src="assets/images/pop-courses.png" alt="Popular Courses" style="width: 35px; height: 35px;">
+              </div>
+              <h5 style="color: #398ed6;">Popular Courses</h5>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="col-sm-4 text-center mb-3">
+            <div class="p-3 border rounded bg-white shadow-sm h-100">
+              <div class="mx-auto mb-3 d-flex justify-content-center align-items-center rounded-circle" 
+                  style="width: 70px; height: 70px; background-color: #de1f20;">
+                <img src="assets/images/guara-career.png" alt="Guaranteed Career">
+              </div>
+              <h5 style="color: #398ed6;">Guaranteed Career</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Why Us Features -->
+    <div class="row mt-5 text-center">
+      <!-- Feature Box 1 -->
+      <div class="col-md-3 mb-4">
+        <div class="p-4 bg-white rounded shadow-sm h-100">
+          <div class="mb-3 text-primary fs-2">
+            <i class="fa fa-desktop"></i>
+          </div>
+          <h5 class="fw-bold" style="color: #de1f20;">Technology</h5>
+          <p class="text-muted small">We equip our students with the latest technological skills for future studies and research.</p>
+        </div>
+      </div>
+
+      <!-- Feature Box 2 -->
+      <div class="col-md-3 mb-4">
+        <div class="p-4 bg-white rounded shadow-sm h-100">
+          <div class="mb-3 text-primary fs-2">
+            <i class="fa fa-users"></i>
+          </div>
+          <h5 class="fw-bold" style="color: #de1f20;">Best Tutor</h5>
+          <p class="text-muted small">Our lecturers are highly trained to handle students and deliver quality training.</p>
+        </div>
+      </div>
+
+      <!-- Feature Box 3 -->
+      <div class="col-md-3 mb-4">
+        <div class="p-4 bg-white rounded shadow-sm h-100">
+          <div class="mb-3 text-primary fs-2">
+            <i class="fa fa-flask"></i>
+          </div>
+          <h5 class="fw-bold" style="color: #de1f20;">Practical Training</h5>
+          <p class="text-muted small">We provide the best lab and field sessions to strengthen practical skills.</p>
+        </div>
+      </div>
+
+      <!-- Feature Box 4 -->
+      <div class="col-md-3 mb-4">
+        <div class="p-4 bg-white rounded shadow-sm h-100">
+          <div class="mb-3 text-primary fs-2">
+            <i class="fa fa-support"></i>
+          </div>
+          <h5 class="fw-bold" style="color: #de1f20;">Support</h5>
+          <p class="text-muted small">We offer religious, moral, and counseling support to guide our students.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonials Section with Swiper -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h1 style="color: #de1f20;">What Our Students Say</h1>
+      <p class="text-muted">Testimonials from students</p>
+    </div>
+
+    <!-- Swiper container -->
+    <div class="swiper testimonialSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="card border-0 shadow rounded-4 p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="assets/images/hero.webp" class="rounded-circle me-3" alt="Student 1" style="width: 60px; height: 60px; object-fit: cover;">
+              <i class="fa fa-quote-right text-secondary fs-3 ms-auto"></i>
+            </div>
+            <p class="text-muted">When the odds are against him and there's danger's work to do. The Love Boat soon will be making another run...</p>
+            <h5 class="mt-3 mb-0" style="color: #398ed6;">Jesicca Mathews</h5>
+            <small class="text-muted">Business Management</small>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="card border-0 shadow rounded-4 p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="assets/images/hero.webp" class="rounded-circle me-3" alt="Student 2" style="width: 60px; height: 60px; object-fit: cover;">
+              <i class="fa fa-quote-right text-secondary fs-3 ms-auto"></i>
+            </div>
+            <p class="text-muted">The Love Boat promises something for everyone. Set a course for adventure your mind on a new romance.</p>
+            <h5 class="mt-3 mb-0" style="color: #398ed6;">Jesicca Mathews</h5>
+            <small class="text-muted">Business Management</small>
+          </div>
+        </div>
+
+        <!-- Add more slides as needed -->
+
+      </div>
+
+      <!-- Swiper Pagination (dots) -->
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer style="background-color: #398ed6;" class="text-white pt-5">
+  <div class="container">
+    <!-- Newsletter -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-8 text-center">
+        <form class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-2">
+          <input type="email" class="form-control rounded-pill px-4" placeholder="Email Address">
+          <button class="btn btn-primary rounded-pill px-4" style="background-color: #de1f20; border: none;">
+            Subscribe
+          </button>
+        </form>
+        <p class="mt-3 small text-white-50">To receive our updates via email</p>
+      </div>
+    </div>
+
+    <!-- Footer widgets -->
+    <div class="row text-white-50">
+      <!-- About Us -->
+      <div class="col-md-3 mb-4">
+        <h5 style="color: #de1f20;">About Us</h5>
+        <p>On my way to where the air is sweet. Can you tell me how to get to Sesame Street?</p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="#" class="text-white"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="text-white"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fa fa-google-plus"></i></a>
+          <a href="#" class="text-white"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Latest Posts -->
+      <div class="col-md-3 mb-4">
+        <h5 style="color: #de1f20;">Latest Posts</h5>
+        <ul class="list-unstyled">
+          <li class="d-flex gap-3 mb-3">
+            <img src="assets/images/hero.webp" class="rounded" style="width: 50px; height: 50px; object-fit: cover;" alt="">
+            <div>
+              <a href="#" class="text-white d-block">On your mark get set and go now</a>
+              <small>April 12, 2025</small>
+            </div>
+          </li>
+          <li class="d-flex gap-3 mb-3">
+            <img src="assets/images/hero.webp" class="rounded" style="width: 50px; height: 50px; object-fit: cover;" alt="">
+            <div>
+              <a href="#" class="text-white d-block">The ship set ground on the shore of this</a>
+              <small>April 12, 2025</small>
+            </div>
+          </li>
+          <li class="d-flex gap-3">
+            <img src="assets/images/hero.webp" class="rounded" style="width: 50px; height: 50px; object-fit: cover;" alt="">
+            <div>
+              <a href="#" class="text-white d-block">This time there's no stopping us</a>
+              <small>April 12, 2025</small>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Latest Tweets -->
+      <div class="col-md-3 mb-4">
+        <h5 style="color: #de1f20;">Latest Tweets</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-3">King's Medical College is one of the excellent medical colleges in Kenya<br>
+            <a href="#" class="text-white">http://kmc.ac.ke</a><br>
+            <span>1 hour ago</span>
+          </li>
+          <li>King's Medical college is one of the excellent medical colleges in Kenya<br>
+            <a href="#" class="text-white">http://kmc.ac.ke</a><br>
+            <span>1 hour ago</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3 mb-4">
+        <h5 style="color: #de1f20;">Contact Info</h5>
+        <ul class="list-unstyled small">
+          <li>Lusoi, Nyange stage, Nyeri, Kenya</li>
+          <li>+254 7039 14824</li>
+          <li>+254 7140 21522</li>
+          <li>Info@kingsmedicalcollege.edu</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer bottom -->
+  <div style="background-color: #347cba;" class="text-center py-3 mt-4">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center text-white-50 small">
+      <p class="mb-2 mb-sm-0">© 2025 King's Medical College. All rights reserved</p>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+        <li class="list-inline-item"><a href="about.html" class="text-white">About</a></li>
+        <li class="list-inline-item"><a href="contact.html" class="text-white">Contact</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>

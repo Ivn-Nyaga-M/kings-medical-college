@@ -1,0 +1,12 @@
+#typewriter {
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+/* transition effecct */
+.navbar {
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.navbar.scrolled {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
