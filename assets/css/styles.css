@@ -1,6 +1,24 @@
 #typewriter {
-  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 3px rgba(222, 31, 32, 1);
+
 }
+
+/* make the arrows way smaller and subtle */
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.4); /* Optional dark background */
+    border-radius: 50%;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 16px !important; /* Controls arrow size */
+    color: white;               /* Make sure arrows are visible */
+  }
+
+
 
 /* transition effecct */
 .navbar {

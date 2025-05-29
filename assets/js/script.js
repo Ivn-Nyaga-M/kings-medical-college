@@ -1,5 +1,5 @@
 //  typeWriter effect
-  const text = "May intake is ongoing. Apply now!";
+  const text = "2025 intake is ongoing. Apply now!";
   let index = 0;
   function typeWriter() {
     if (index < text.length) {
@@ -23,6 +23,8 @@ window.onload = typeWriter;
 // Run on load & resize
   window.addEventListener('load', positionTypewriter);
   window.addEventListener('resize', positionTypewriter);
+  
+  
 // hero swiper initialization
 const heroSwiper = new Swiper('.heroSwiper', {
   loop: true,
