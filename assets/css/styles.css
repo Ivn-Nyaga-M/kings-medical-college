@@ -257,7 +257,7 @@ section { padding: 96px 0; }
   min-height: 92vh;
   display: flex;
   align-items: center;
-  padding-top: var(--header-h);
+  padding: calc(var(--header-h) + 56px) 0 64px;
   background-size: cover;
   background-position: center;
   isolation: isolate;
