@@ -1,0 +1,9 @@
+title: King's Medical College
+description: "Diploma & Certificate Health Training in Nyeri, Kenya"
+url: "https://kingsmedicalcollege.ac.ke"
+
+markdown: kramdown
+permalink: /blog/:title.html
+
+exclude:
+  - README.md
